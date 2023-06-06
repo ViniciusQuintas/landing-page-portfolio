@@ -1,0 +1,487 @@
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; Titulo */
+/* font-family: 'Poppins', sans-serif; Textos  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* menu e intro  */
+
+header{
+    width: 100%;
+    padding: 0 0 80px 0;
+    background-color: #202425;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.menuFixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+    background-color: #202425;
+    transition: 0.5s;
+}
+
+.menu .menu-logo a{
+    text-decoration: none;
+}
+
+.menu .menu-logo a h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #DE7D0F;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menu .menu-itens{
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu .menu-itens li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menu .menu-itens .inicio{color: #DE7D0F;}
+
+.menu .menu-itens li a{
+    text-decoration: none;
+    color: #DCD9D5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.menu .menu-itens li a:hover{
+    color: #DE7D0F;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 35px;
+}
+
+.intro .intro-img{
+    width: 50%;
+    height: 100%;
+}
+
+.intro .intro-img img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.intro .intro-content{
+    text-align: center;
+    padding: 0 40px;
+    width: 50%;
+}
+
+.intro .intro-content h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #DCD9D5;
+    margin-bottom: 15px;
+}
+
+.intro .intro-content p{
+    color: #DCD9D5;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.intro .intro-content .link-1{
+    text-decoration: none;
+    background-color: #DE7D0F;
+    color: #E2DAD1;
+    padding: 5px 20px;
+    border: 2px solid #DE7D0F;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.intro .intro-content .link-2{
+    text-decoration: none;
+    background-color: transparent;
+    color: #E2DAD1;
+    padding: 5px 20px;
+    border: 2px solid #DE7D0F;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+/* section sobre-nos */
+
+section.sobre-nos{
+    width: 100%;
+    background-color: #D9D8D8;
+    padding: 40px 0;
+}
+
+section.sobre-nos h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #2D2822;
+    text-align: center;
+    font-size: 40px;
+}
+
+section.sobre-nos .card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+section.sobre-nos .card .card-icon{
+    text-align: center;
+    padding: 60px;
+    background: #F6F4F4;
+    box-shadow: 15px 20px 10px #00000029;
+    cursor: pointer;
+}
+
+section.sobre-nos .card .card-icon i{
+    color: #DE7D0F;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+section.sobre-nos .card .card-icon h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #2D2822;
+}
+
+/* section trabalhos */
+
+section.trabalhos{
+    width: 100%;
+    background-color: #F1F1F1;
+}
+
+section.trabalhos h2{
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #2D2822;
+    font-size: 40px;
+}
+
+section.trabalhos .trab{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 40px 0;
+}
+
+section.trabalhos .trab .trab-img img{
+    max-width: 100%;
+}
+
+section.trabalhos .trab .trab-text{
+    text-align: center;
+    width: 50%;
+}
+
+section.trabalhos .trab .trab-text p{
+    text-align: justify;
+    color: #2D2822;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+section.trabalhos .trab .trab-text a{
+    text-decoration: none;
+    background-color: #DE7D0F;
+    color: #ffffff;
+    padding: 5px 90px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+
+/* section email */
+
+section.email{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 40px 0;
+}
+
+section.email h2{
+    text-align: center;
+    padding: 30px 0 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #2D2822;
+    font-size: 40px;
+}
+
+section.email .inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.email .inputs input[type=email]{
+    width: 400px;
+    height: 40px;
+    margin-right: 10px;
+    outline: none;
+    border: 1px solid #707070;
+    padding-left: 15px;
+}
+
+section.email .inputs input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: #202425;
+    color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: 1px solid #707070;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: #202425;
+    padding: 60px 0;
+}
+
+footer .footer-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+footer .footer-icons i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DE7D0F;
+    font-size: 30px;
+}
+
+footer .footer-icons i span{
+    color: #DCD5D5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+footer .bar{
+    margin: 30px auto;
+    width: 80%;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+footer .footer-dir{
+    width: 100%;
+    text-align: center;
+}
+
+footer .footer-dir h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* menu responsivo  */
+
+.abrirMenu{display: none;}
+
+.abrirMenu i{
+    color: white;
+    font-size: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+nav{display: none;}
+
+.menu-mobile{
+    padding: 10px 0;
+    text-align: center;
+    display: none;
+}
+
+.menu-mobile li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.menu-mobile .inicio{color: #DE7D0F;}
+
+.menu-mobile li a{
+    text-decoration: none;
+    color: #DCD9D5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.menu-mobile li a:hover{
+    color: #DE7D0F;
+}
+
+@media screen and (max-width:900px){
+    .menu .menu-itens{
+        display: none;
+    }
+
+    .abrirMenu{display: block;}
+
+    nav{display: block;}
+}
+
+/* intro responsivo */
+
+@media screen and (max-width:900px){
+    .intro{
+        display: block;
+    }
+
+    .intro .intro-img{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .intro .intro-content{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:474px){
+    .intro .intro-content{
+        padding: 0 0;
+    }
+
+    .intro .intro-content .link-1{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* section sobre-nos responsivo */
+
+@media screen and (max-width:980px){
+    section.sobre-nos .card{
+        display: block;
+    }
+
+    section.sobre-nos .card .card-icon{
+        margin-bottom: 15px;
+    }
+}
+
+/* section trabalhos responsivo */
+
+@media screen and (max-width:980px){
+    section.trabalhos .trab{
+        display: block;
+        width: 100%;
+    }
+
+    section.trabalhos .trab .trab-img{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    section.trabalhos .trab .trab-text{
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:400px){
+    section.trabalhos .trab .trab-img{
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    section.trabalhos .trab .trab-text p{
+        font-size: 5vw;
+        margin-bottom: 40px;
+    }
+
+    section.trabalhos .trab .trab-text a{
+        padding: 5px 20px;
+        display: block;
+    }
+}
+
+/* section email responsivo */
+
+@media screen and (max-width:650px){
+    section.email h2{
+        font-size: 30px;
+        padding: 20px 10px 40px 10px;
+    }
+
+    section.email .inputs{
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    section.email h2{
+        font-size: 25px;
+    }
+}
+
+/* footer responsivo */
+
+@media screen and (max-width:800px) {
+    footer .footer-icons{
+        display: block;
+        padding: 10px 0;
+    }
+
+    footer .footer-icons i{
+        margin-bottom: 20px;
+    }
+    
+    footer .footer-dir h2{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:400px){
+    footer .footer-dir h2{
+        font-size: 16px;
+    }
+}
